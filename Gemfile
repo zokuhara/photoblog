@@ -45,3 +45,9 @@ group :development do
   gem 'spring'
 end
 
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
+gem "bootstrap-sass"
+gem 'simple_form'
+gem 'react-rails', '~> 1.3.0'
+gem 'refile-postgres'
