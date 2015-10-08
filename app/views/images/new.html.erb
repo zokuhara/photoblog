@@ -1,7 +1,7 @@
 <h1>Upload your own bitchin' photos</h1>
 
 <%= simple_form_for @image do |f| %>
-  <%= f.input :url %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 
 <% end %>

@@ -4,3 +4,7 @@
   <%= link_to 'Upload New Photo', new_image_path, class: "btn btn-lg btn-primary col-md-6"%>
   <%= link_to 'Refresh', root_path, class: "btn btn-lg btn-success col-md-6" %>
 </div>
+
+<% @images.each do |image| %>
+  <%= image_tag attachment_url(image, :photo, :fill, 400, 400, format: "jpg") %>
+<% end %>
